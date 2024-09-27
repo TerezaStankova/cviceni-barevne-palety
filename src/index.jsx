@@ -11,8 +11,8 @@ const App = () => {
         <h1>Barevné palety</h1>
       </header>
           <main>
-              {palettes.map(p => <Palette palette={p}/>)}
-      </main>
+              {palettes.map(p => <Palette key={p.name} paletteData={p}/>)}
+          </main>
       <footer>
         <p>Czechitas, Digitální akademie: Web</p>
       </footer>
